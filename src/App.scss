@@ -1,0 +1,219 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+.App-link {
+  color: white;
+}
+
+.footer :-webkit-scrollbar{
+  
+  
+  display: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
+
+
+body {
+  background-color: white;
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  text-align: center;
+  
+  font-weight: 700;
+  
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  
+}
+
+#fly-in {
+  font-size: 4em;
+  margin: 40vh auto;
+  height: 50px; 
+  text-transform: uppercase;
+}
+
+#fly-in span {
+  display: block;
+  font-size: .4em;
+  opacity: .8;
+}
+
+#fly-in div {
+  position: absolute;
+  margin: auto;
+  opacity: 0;
+  left: 10vw;
+  width: 80vw;
+  animation: switch 15s linear infinite;
+}
+
+#fly-in div:nth-child(2) { animation-delay: 3s}
+#fly-in div:nth-child(3) { animation-delay: 6s}
+#fly-in div:nth-child(4) { animation-delay: 9s}
+#fly-in div:nth-child(5) { animation-delay: 12s}
+
+
+
+@keyframes switch {
+    0% { opacity: 0;filter: blur(20px); transform:scale(12)}
+    3% { opacity: 1;filter: blur(0); transform:scale(1)}
+    10% { opacity: 1;filter: blur(0); transform:scale(.9)}
+    13% { opacity: 0;filter: blur(10px); transform:scale(.1)}
+    80% { opacity: 0}
+    100% { opacity: 0}
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+// @mixin hardwareAccel() {
+// 	// Improve performance on mobile/tablet devices
+// 	// Perspective reduces blurryness of text in Chrome
+// 	@include prefixed(transform, perspective(1px) translateZ(0));
+// }
+
+// @mixin improveAntiAlias() {
+// 	// Improve aliasing on mobile/tablet devices
+// 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+// }
+
+// @mixin forceBlockLevel() {
+// 	// Transforms need to be block-level to work
+// 	display: inline-block;
+// 	vertical-align: middle;
+// }
+
+// @mixin hacks() {
+// 	@include forceBlockLevel();
+// 	@include hardwareAccel();
+// 	@include improveAntiAlias();
+// }
+
+.fix {
+  font-size: 140%; // makes font bigger on 50% 
+}
+
+
+
+
+
+
+
+@-webkit-keyframes hvr-wobble-to-bottom-right {
+  16.65% {
+    -webkit-transform: translate(8px, 8px);
+    transform: translate(8px, 8px);
+  }
+  33.3% {
+    -webkit-transform: translate(-6px, -6px);
+    transform: translate(-6px, -6px);
+  }
+  49.95% {
+    -webkit-transform: translate(4px, 4px);
+    transform: translate(4px, 4px);
+  }
+  66.6% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  83.25% {
+    -webkit-transform: translate(1px, 1px);
+    transform: translate(1px, 1px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@keyframes hvr-wobble-to-bottom-right {
+  16.65% {
+    -webkit-transform: translate(8px, 8px);
+    transform: translate(8px, 8px);
+  }
+  33.3% {
+    -webkit-transform: translate(-6px, -6px);
+    transform: translate(-6px, -6px);
+  }
+  49.95% {
+    -webkit-transform: translate(4px, 4px);
+    transform: translate(4px, 4px);
+  }
+  66.6% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  83.25% {
+    -webkit-transform: translate(1px, 1px);
+    transform: translate(1px, 1px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+.hvr-wobble-to-bottom-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  color:black; 
+  text-decoration:none !important;
+  font-weight: bold;
+}
+.hvr-wobble-to-bottom-right:hover, .hvr-wobble-to-bottom-right:focus, .hvr-wobble-to-bottom-right:active {
+  -webkit-animation-name: hvr-wobble-to-bottom-right;
+  animation-name: hvr-wobble-to-bottom-right;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
