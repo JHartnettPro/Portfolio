@@ -1,5 +1,16 @@
 import React, { Component } from 'react';
-
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faGithub,
+    faGoogle,
+    faFacebook,
+    faTwitter,
+    faLinkedin,
+    faReact,
+    faPython
+  } from '@fortawesome/free-brands-svg-icons';
+  
 
 
 
@@ -22,9 +33,9 @@ class Header extends Component {
   
             <div id="fly-in">  
 <div class="text-black">John Hartnett<span></span></div>
-<div class="text-black">Full-stack <span>Web Developer</span></div>
+<div class="text-black">Full Stack <span>Web Developer</span></div>
 <div class="text-black">1000+ Hours<span>Experience</span></div>
-<div class="text-black"><h1 class="fix"><i class="fab fa-react "></i> C# <i class="fab fa-python "></i></h1> <span>proficiency</span></div>
+<div class="text-black"><h1 class="fix"><FontAwesomeIcon icon={faReact} /> C# <FontAwesomeIcon icon={faPython} /></h1> <span>proficiency</span></div>
 
 <div class="text-black">Available for Hire</div>
 
@@ -61,11 +72,10 @@ class Header extends Component {
                         <br/>
             
                         <h6 class="text-uppercase mb-4 text-black font-weight-bold">Contact</h6>
-                        <a class="btn btn-outline-light btn-social mx-1  " href="https://github.com/JHartnettPro"><i class="fab fa-fw fa-github"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1 " href="https://mail.google.com/mail/?view=cm&fs=1&to=jhartnettpro@gmail.com&su=Hi I'd like to hire you immediately&body=You can also call or text me anytime at 708 546 7062 for a quicker response."><i class="fas fa-envelope-square"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1 " href="https://linkedin.com/in/john-hartnett-24b2261b7/"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        
-                        <br/>
+                        <a class="btn   mx-1  " href="https://linkedin.com/in/john-hartnett-24b2261b7/"><FontAwesomeIcon icon={faLinkedin} /></a>
+                        <a class="btn   mx-1  " href="https://github.com/JHartnettPro"><FontAwesomeIcon icon={faGithub} /></a>
+                        <a class="btn   mx-1  " href="https://mail.google.com/mail/?view=cm&fs=1&to=jhartnettpro@gmail.com&su=Hi I'd like to hire you immediately&body=You can also call or text me anytime at 708 546 7062 for a quicker response."><FontAwesomeIcon icon={faEnvelope} /></a>
+                                               <br/>
                         <br/>
                         <br/>
                         <br/>
