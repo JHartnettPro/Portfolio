@@ -30,21 +30,26 @@ class Header extends Component {
             
             <div class= "all">
             <body class="footer text-center ">
+            
   
             <div id="fly-in">  
-<div class="text-black">John Hartnett<span></span></div>
+            <div class="text-black">John Hartnett<span></span></div>
 <div class="text-black">Full Stack <span>Web Developer</span></div>
 <div class="text-black">1000+ Hours<span>Experience</span></div>
 <div class="text-black"><h1 class="fix"><FontAwesomeIcon icon={faReact} /> C# <FontAwesomeIcon icon={faPython} /></h1> <span>proficiency</span></div>
 
 <div class="text-black">Available for Hire</div>
+<div class="text-black">John Hartnett<span></span></div>
+
+
 
 
 </div>
+
             
                 <div class="row justify-content-center ">
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-black">My Projects</h4>
+                        <h4 class="text-uppercase text-black text-center font-weight-bold mb-80">My Projects</h4>
                         <br/>
                         <a class="hvr-wobble-to-bottom-right" href="https://github.com/JHartnettPro/Python-Dating-App">Dating App</a>
                         <br/>
@@ -54,7 +59,7 @@ class Header extends Component {
                     </div>
                     
                     <div class="col-lg-4">
-                        <h4 class="text-uppercase text-black text-center  mb-80">About Me</h4>
+                        <h4 class="text-uppercase text-black text-center font-weight-bold mb-80">About Me</h4>
                         <br/>
                         <p class="lead mb-0 text-center text-black font-weight-bold">
                                 Full stack developer with a passion for creating functional and stylish web applications. 
@@ -71,11 +76,11 @@ class Header extends Component {
             <br/>
                         <br/>
             
-                        <h6 class="text-uppercase mb-4 text-black font-weight-bold">Contact</h6>
-                        <a class="btn   mx-1  " href="https://linkedin.com/in/john-hartnett-24b2261b7/"><FontAwesomeIcon icon={faLinkedin} /></a>
-                        <a class="btn   mx-1  " href="https://github.com/JHartnettPro"><FontAwesomeIcon icon={faGithub} /></a>
-                        <a class="btn   mx-1  " href="https://mail.google.com/mail/?view=cm&fs=1&to=jhartnettpro@gmail.com&su=Hi I'd like to hire you immediately&body=You can also call or text me anytime at 708 546 7062 for a quicker response."><FontAwesomeIcon icon={faEnvelope} /></a>
-                                               <br/>
+                        <h5 class="text-uppercase text-black text-center mb-4 font-weight-bold">Contact</h5>
+                        <a class="btn mx-1 btn-lg " href="https://linkedin.com/in/john-hartnett-24b2261b7/"><FontAwesomeIcon icon={faLinkedin} /></a>
+                        <a class="btn  mx-1 btn-lg " href="https://github.com/JHartnettPro"><FontAwesomeIcon icon={faGithub} /></a>
+                        <a class="btn mx-1 btn-lg " href="https://mail.google.com/mail/?view=cm&fs=1&to=jhartnettpro@gmail.com&su=Hi I'd like to hire you immediately&body=You can also call or text me anytime at 708 546 7062 for a quicker response."><FontAwesomeIcon icon={faEnvelope} /></a>
+                        <br/>
                         <br/>
                         <br/>
                         <br/>

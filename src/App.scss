@@ -4,11 +4,7 @@
 
 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 
 .App-header {
   background-color: white;
@@ -23,14 +19,6 @@
 
 
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 
 
@@ -83,50 +71,36 @@ body {
   opacity: 0;
   left: 10vw;
   width: 80vw;
-  animation: switch 15s linear infinite;
+  animation-name: switch;
+  
+  
+  animation-duration: 3s;
+  
+  
+  
+   
 }
+#fly-in div:nth-child(1) { animation-delay: 0s;  }
+#fly-in div:nth-child(2) { animation-delay: 3s; }
+#fly-in div:nth-child(3) { animation-delay: 6s; }
+#fly-in div:nth-child(4) { animation-delay: 9s; }
+#fly-in div:nth-child(5) { animation-delay: 12s; }
+#fly-in div:nth-child(6) { animation-delay: 15s; animation-fill-mode: forwards; }
 
-#fly-in div:nth-child(2) { animation-delay: 3s}
-#fly-in div:nth-child(3) { animation-delay: 6s}
-#fly-in div:nth-child(4) { animation-delay: 9s}
-#fly-in div:nth-child(5) { animation-delay: 12s}
 
 
 
 @keyframes switch {
-    0% { opacity: 0;filter: blur(20px); transform:scale(12)}
-    3% { opacity: 1;filter: blur(0); transform:scale(1)}
-    10% { opacity: 1;filter: blur(0); transform:scale(.9)}
-    13% { opacity: 0;filter: blur(10px); transform:scale(.1)}
-    80% { opacity: 0}
-    100% { opacity: 0}
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
+
+
 
 ::-webkit-scrollbar {
   display: none;
 }
-// @mixin hardwareAccel() {
-// 	// Improve performance on mobile/tablet devices
-// 	// Perspective reduces blurryness of text in Chrome
-// 	@include prefixed(transform, perspective(1px) translateZ(0));
-// }
 
-// @mixin improveAntiAlias() {
-// 	// Improve aliasing on mobile/tablet devices
-// 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-// }
-
-// @mixin forceBlockLevel() {
-// 	// Transforms need to be block-level to work
-// 	display: inline-block;
-// 	vertical-align: middle;
-// }
-
-// @mixin hacks() {
-// 	@include forceBlockLevel();
-// 	@include hardwareAccel();
-// 	@include improveAntiAlias();
-// }
 
 .fix {
   font-size: 140%; // makes font bigger on 50% 
@@ -210,3 +184,38 @@ body {
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
+
+
+// #fly-in div {
+//   position: absolute;
+//   margin: auto;
+//   opacity: 0;
+//   left: 10vw;
+//   width: 80vw;
+//   animation-name: switch;
+  
+  
+//   animation-duration: 15s;
+//   animation-direction: reverse;
+//   animation-fill-mode: forwards;
+  
+   
+// }
+
+// #fly-in div:nth-child(2) { animation-delay: 3s}
+// #fly-in div:nth-child(3) { animation-delay: 6s}
+// #fly-in div:nth-child(4) { animation-delay: 9s}
+// #fly-in div:nth-child(5) { animation-delay: 12s}
+// #fly-in div:nth-child(6) { animation-delay: 15s}
+
+
+
+
+// @keyframes switch {
+//     0% { opacity: 0;filter: blur(20px); transform:scale(12)}
+//     3% { opacity: 1;filter: blur(0); transform:scale(1)}
+//     10% { opacity: 1;filter: blur(0); transform:scale(.9)}
+//     13% { opacity: 0;filter: blur(10px); transform:scale(.1)}
+//     80% { opacity: 0}
+//     100% { opacity: 1}
+// }
