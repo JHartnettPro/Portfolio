@@ -51,11 +51,11 @@ class Header extends Component {
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase text-black text-center font-weight-bold mb-80">My Projects</h4>
                         <br/>
-                        <a class="hvr-wobble-to-bottom-right" href="https://github.com/JHartnettPro/Python-Dating-App">Dating App</a>
+                        <a class="hvr-wobble-to-bottom-right font-weight-bold" href="https://github.com/JHartnettPro/Python-Dating-App">Dating App</a>
                         <br/>
-                        <a class="hvr-wobble-to-bottom-right" href="https://github.com/JHartnettPro/C-Hobby-Planner">Hobby Planner</a>
+                        <a class="hvr-wobble-to-bottom-right font-weight-bold" href="https://github.com/JHartnettPro/C-Hobby-Planner">Hobby Planner</a>
                         <br/>
-                        <a  class="hvr-wobble-to-bottom-right" href="https://github.com/JHartnettPro/React-Speech-to-Text">Speech to Text</a>
+                        <a  class="hvr-wobble-to-bottom-right font-weight-bold" href="https://github.com/JHartnettPro/React-Speech-to-Text">Speech to Text</a>
                     </div>
                     
                     <div class="col-lg-4">
